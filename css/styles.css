@@ -194,6 +194,7 @@ p {
 .btn-primary:focus {
   background-color: #188ce8;
 }
+/*the modal section*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -297,8 +298,33 @@ img {
   display: flex;
 }
 
+.work-item {
+  position: relative;
+}
 .work-item:not(:last-child) {
   margin-right: var(--card-set-gap);
+}
+
+.work-thumb {
+  position: absolute;
+  left: 0;
+  top: 224px;
+
+  width: 370px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.work-title {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 .section-text,
 .address-text {
