@@ -123,10 +123,10 @@ p {
   position: absolute;
   content: "";
   display: inline-block;
-  width: 48px;
+  width: 100%;
   height: 4px;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   background-color: var(--accent-color);
   border-radius: 2px;
 }
@@ -308,9 +308,8 @@ img {
 .work-thumb {
   position: absolute;
   left: 0;
-  top: 224px;
-
-  width: 370px;
+  bottom: 0;
+  width: 100%;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -395,7 +394,7 @@ img {
     var(--transition-timing-function);
 }
 .icon-team {
-  height: 20px;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 .team-social-link:hover,
 .team-social-link:focus {
